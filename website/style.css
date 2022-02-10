@@ -1,0 +1,361 @@
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("font-files/Inter-Regular.woff2?v=3.19") format("woff2"),
+       url("font-files/Inter-Regular.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style:  italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("font-files/Inter-Italic.woff2?v=3.19") format("woff2"),
+       url("font-files/Inter-Italic.woff?v=3.19") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("font-files/Inter-Bold.woff2?v=3.19") format("woff2"),
+       url("font-files/Inter-Bold.woff?v=3.19") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("font-files/Inter-BoldItalic.woff2?v=3.19") format("woff2"),
+       url("font-files/Inter-BoldItalic.woff?v=3.19") format("woff");
+}
+
+@font-face {
+  font-family: 'InterDisplay';
+  font-style:  normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("font-files/InterDisplay-Black.woff2?v=3.19") format("woff2"),
+       url("font-files/InterDisplay-Black.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'InterDisplay';
+  font-style:  italic;
+  font-weight: 900;
+  font-display: swap;
+  src: url("font-files/InterDisplay-BlackItalic.woff2?v=3.19") format("woff2"),
+       url("font-files/InterDisplay-BlackItalic.woff?v=3.19") format("woff");
+}
+
+@font-face {
+  font-family: 'Chomsky';
+  font-style:  normal;
+  font-weight: 700;
+  font-display: swap;
+  src:  url("font-files/Chomsky.otf") format("otf"),
+}
+
+@font-face {
+  font-family: 'IBMPlexMono';
+  font-style:  normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("font-files/IBMPlexMonoExtraLight.otf") format("otf"),
+	   url("font-files/IBMPlexMonoExtraLight.woff?v=3.19") format("woff");
+}
+
+body {
+	font-family: 'Inter', sans-serif;
+	font-style:normal;
+	font-weight:700;
+	background:#090909;
+}
+
+h1{
+	font-family: 'InterDisplay', sans-serif;
+	font-style:normal;
+	font-weight:900;
+}
+
+.border-st{
+	border-radius:0;
+}
+
+.border-l{
+	border-left-width:20px;
+	border-left-style:solid;
+	border-left-color:#0ff;
+	text-shadow: 0px 0px 5px #0ff;
+	line-height:1.1em;
+	padding-left:48px;
+	/*filter:blur(20px);*/
+	/*transition: ease-in-out 10s;*/
+}
+
+.border-l2{
+	border-left-width:15px;
+	border-left-style:solid;
+	border-left-color:#0ff;
+	/* text-shadow: 0px 0px 5px #0ff; */
+	
+	font-family: 'Chomsky', blackletter;
+	font-style:normal;
+	font-weight:700;
+	
+	/*filter:blur(20px);*/
+	/*transition: ease-in-out 10s;*/
+}
+
+a:hover{
+	text-decoration:none;
+}
+
+.news{
+	padding-top:48px;
+	padding-bottom:48px;
+}
+
+.info{
+	font-family: 'IBMPlexMono', monospace;
+	font-style:  normal;
+	font-weight: 400;
+	font-size:12px;
+	letter-spacing:0.12em;
+	border-left:1px solid #0ff;
+}
+
+.dl-bt{
+	background-color:#000;
+	transition:ease-in-out 0.3s;
+}
+
+.dl-bt:hover{
+	background-color:#080e0d;
+    -webkit-box-shadow: inset 0 0 15px #0ff;
+    -moz-box-shadow: inset 0 0 15px #0ff;
+    box-shadow: inset 0 0 15px #0ff;
+	-webkit-box-shadow: inset 0 0 15px #0ff;
+    -moz-box-shadow: inset 0 0 15px #0ff;
+    box-shadow: inset 0 0 15px #0ff;
+}
+
+footer{
+	background: rgb(188,15,47);
+	background: linear-gradient(0deg, rgba(188,15,47,1) 0%, rgba(9,13,16,1) 22%, rgba(16,23,28,1) 100%);
+	height:20vw;
+    bottom: 0;
+    width: 100%;
+}
+
+.navbar-toggler{
+	border-radius:0px;
+	border-color:#6c757d;
+	opacity:1;
+}
+
+.a{
+	background-color:rgba(0, 0, 0, 0);
+	transition: ease-in-out 0.2s;
+}
+
+.b{
+	background-color:#000;
+	border-bottom:1px solid #6c757d;
+	padding-top:0px;
+	padding-bottom:0px;
+}
+
+.b 	.nav-link{
+	border:0;
+}
+
+.b .navbar-brand img{
+	max-height:30px;
+	padding:0;
+}
+
+.b .border-st{
+	padding-bottom:0;
+	padding-top:0;
+}
+
+.quote{
+	
+	border-left:1px solid #0ff;
+}
+
+.btn:hover{
+	color:#000;
+	background-color:#000;
+}
+
+a:hover .btn {
+	color:#000;
+}
+
+.icon-sm{
+		vertical-align:middle;
+	}
+	
+
+/* Philosophy */
+
+.p-text{
+	font-family: 'Inter';
+	font-style:  normal;
+	font-weight: 400;
+	padding:48px;
+}
+
+h4{
+	font-size:2em;
+	padding-left:0.5em;
+	border-left-width:15px;
+	border-left-style:solid;
+	border-left-color:#0ff;
+	
+	font-family: 'InterDisplay', sans-serif;
+	font-style:normal;
+	font-weight:800;
+}
+
+.p-text a{
+	color:#0ff;
+	border-bottom:1px solid #0ff;
+	padding-bottom:2px;
+	transition:ease-in-out 0.3s;
+}
+
+.p-text a:hover{
+	color:#f00;
+	border-bottom:1px solid #f00;
+}
+
+.l-ph{
+	background:url("img/bgp.gif") no-repeat, linear-gradient(180deg, rgba(16,23,28,1) 7%, rgba(35,107,107,1) 35%, rgba(16,23,28,1) 62%, rgba(108,20,32,1) 69%, rgba(16,23,28,1) 87%);
+
+}
+
+
+/* Community */
+
+h5{
+	font-size:2em;
+	padding-left:0.5em;
+	border-left-width:15px;
+	border-left-style:solid;
+	border-left-color:#0ff;
+	
+	font-family: 'InterDisplay', sans-serif;
+	font-style:normal;
+	font-weight:800;
+}
+
+h5 a{
+	color:#fff;
+	border-bottom:1px solid #0ff;
+	transition:ease-in-out 0.3s;
+}
+
+h5 a:hover{
+	color:#f00;
+	border-bottom:1px solid #f00;
+}
+
+/* Download */
+
+.dl-info{
+	font-family: 'IBMPlexMono', monospace;
+	font-style:  normal;
+	font-weight: 400;
+	font-size:15px;
+	letter-spacing:0.12em;
+	border-left:1px solid #0ff;
+}
+
+/* Responsive */
+
+@media (max-width: 590px) {
+	.navbar-brand img
+	{
+		max-height:40px;
+	}
+	
+	.about
+	{
+		font-size:4.5vw;
+	}
+	
+	footer{
+		height:60vw;
+	}
+	
+	.icon-sm{
+		max-width:20px;
+		vertical-align:middle;
+	}
+	
+	.p-text{
+		font-size:14px;
+		padding:24px;
+	}
+}
+
+.mail{
+	display:inline-block;
+}
+
+@media (max-width: 350px) {
+	.navbar-brand img
+	{
+		max-height:30px;
+	}
+}
+
+
+@media (max-width: 730px) {
+		.display-1
+	{
+		font-size:10vw;
+	}
+	
+		.border-l
+	{
+		padding-left:24px;
+		border-left-width:12px;
+	}
+}
+
+@media (max-width: 991px) {
+	.news{
+	padding-top:0px;
+	padding-bottom:48px;
+}
+
+}
+
+@media (max-width: 767px) {
+	.border-st{
+	background-color:#000;
+	
+}
+
+	.img-dl{
+		display:none;
+	}
+	
+	.dl-info-v{
+		display:none;
+	}
+	
+	.navbar-nav{
+	margin:auto;
+}
+
+
+
+}
+
